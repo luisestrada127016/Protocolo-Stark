@@ -1,0 +1,57 @@
+body {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(73, 73, 73);}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+    width: min(100%, 300px);
+    margin: 30px auto 0;
+    background-color: rgb(107, 107, 107);
+    padding: 10px 16px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    transition: transform 0.3s ease;}
+
+header:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgb(35, 35, 35)}
+
+img.logo {
+    width: 180px;
+    height: auto;
+    margin: 0 auto 18px;
+    display: block;
+    border-radius: 10px;}
+
+.email-input, .password-input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+
+button:hover {
+    background-color: #ffffff;
+    color: black;}
+
+nav {
+    margin-top: 20px;
+    color: rgb(36, 129, 234);}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    font-size: 14px;}
