@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>STARK-AIRLINE</title>
-        <link rel="stylesheet" href="styles_create_account.css">
-    </head>
-    <body>
-        <header>
-            <h1 class="title">STARK-AIRLINE</h1>
-            <img src="Stark-logo-no-text.png" alt="Stark-Airline logo" id="logo-no-text" class="logo">
-            <form>
-                <input type="email" placeholder="Email" required class="email-input">
-                <input type="password" placeholder="Password" required class="password-input">
-                <input type="password" placeholder="Confirm Password" required class="password-input">
-                <label for="save-info">
-                    <input type="checkbox" name="save-info" id="save-info">Save my information
-                </label>
-                <button type="submit">Create Account</button>
-            </form>
-        </header>
-        <footer><p>&copy; 2024 STARK-INDUSTRIES. All rights reserved.</p></footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARK-AIRLINE</title>
+    <link rel="stylesheet" href="styles_create_account.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">STARK-AIRLINE</h1>
+        <img src="Stark-logo-no-text.png" alt="Stark-Airline logo" id="logo-no-text" class="logo">
+    </header>
+    <main>
+        <h3>Create your account</h3>
+        <form>
+            <!-- Inputs con labels semánticos -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required class="data-create-input">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required class="data-create-input">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required class="data-create-input">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required class="data-create-input">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="data-create-input">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required class="data-create-input">
+            <!-- Checkbox con label correcto -->
+            <label for="save-info">
+                <input type="checkbox" name="save-info" id="save-info"> Save my information
+            </label>
+            <!-- Botón sin label extra -->
+            <button type="submit" name="create-account-button">Create Account</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 STARK-INDUSTRIES. All rights reserved.</p>
+    </footer>
+</body>
 </html>
