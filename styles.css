@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: sans-serif;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(119, 2, 196);
     margin: 0;
     padding: 0.75rem;
     box-sizing: border-box;
@@ -15,9 +15,8 @@ header {
     text-align: center;
     width: min(100%, 360px);
     margin: 1rem auto 0;
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(0, 0, 0);
     padding: 1rem;
-    border: 2px solid #000000;
     border-radius: 12px;
     transition: transform 0.3s ease;
     color: white;
@@ -41,6 +40,12 @@ img.logo {
     margin: 0 auto;
     display: block;
     border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+img.logo:hover {
+    transform: scale(1.1);
 }
 
 /* Contenido principal */
