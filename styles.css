@@ -70,8 +70,7 @@ label {
 }
 
 /* Inputs */
-.email-input,
-.password-input {
+.email-input, .password-input {
     padding: 0.9rem;
     width: 100%;
     box-sizing: border-box;
