@@ -1,57 +1,111 @@
 body {
-    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(73, 73, 73);}
+    font-family: sans-serif;
+    background-color: rgb(73, 73, 73);
+    margin: 0;
+    padding: 0.75rem;
+    box-sizing: border-box;}
 
 header {
     display: grid;
     grid-template-columns: 1fr;
     color: white;
     text-align: center;
-    width: min(100%, 300px);
-    margin: 30px auto 0;
+    width: min(100%, 360px);
+    max-width: 100%;
+    margin: 1rem auto 0;
     background-color: rgb(107, 107, 107);
-    padding: 10px 16px;
+    padding: 1rem;
     border: 2px solid #000000;
-    border-radius: 10px;
-    transition: transform 0.3s ease;}
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;}
 
 header:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 12px rgb(35, 35, 35)}
+    box-shadow: 0 4px 12px rgb(35, 35, 35);}
 
 img.logo {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     height: auto;
-    margin: 0 auto 18px;
+    margin: 0 auto 1rem;
     display: block;
     border-radius: 10px;}
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;}
+
 .email-input, .password-input {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0.9rem;
+    margin: 0;
     width: 100%;
     box-sizing: border-box;
-    border-radius: 5px;}
+    border-radius: 8px;
+    font-size: 1rem;}
 
 button {
-    padding: 10px 20px;
+    padding: 0.9rem 1rem;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;}
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 48px;
+    font-size: 1rem;}
 
 button:hover {
     background-color: #ffffff;
     color: black;}
 
+.save-info {
+  text-decoration: none; /* no underline by default */
+  transition: all 0.3s ease; /* soft animation */}
+
+.save-info:hover {
+  text-decoration: underline; /* underline appears */
+  text-decoration-color: rgb(36, 129, 234); /* underline color */}
+
 nav {
-    margin-top: 20px;
+    margin-top: 1rem;
     color: rgb(36, 129, 234);}
+
+nav a {
+    display: inline-block;
+    padding: 0.4rem 0;
+    color: inherit;
+    text-decoration: none;}
 
 footer {
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1rem;
     background-color: black;
-    font-size: 14px;}
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+    }
+
+    header {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    img.logo {
+        max-width: 150px;
+    }
+
+    .email-input,
+    .password-input,
+    button {
+        font-size: 1rem;
+    }
+}
