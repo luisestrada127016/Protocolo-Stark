@@ -22,7 +22,7 @@ header {
     box-sizing: border-box;
     opacity: 0;   
     transform: scale(0.5);
-    animation: aparecer 2s ease-out forwards;
+    animation: aparecer 1s ease-out forwards;
     transition: box-shadow 0.3s ease;
 }
 
@@ -72,7 +72,7 @@ main {
     box-sizing: border-box;
     opacity: 0;              /* Empieza invisible */
     transform: scale(0.5);   /* Empieza más pequeño */
-    animation: aparecer 2s ease-out forwards;
+    animation: aparecer 1s ease-out forwards;
 }
 
 @keyframes aparecer {
