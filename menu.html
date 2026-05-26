@@ -8,45 +8,20 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="header-text">
-                <h1 class="title">Welcome to Stark-Airline</h1>
-                <h2 class="title">What do you want to do?</h2>
-            </div>
-            <!-- Botón hamburguesa al lado del header -->
-            <button class="hamburger" id="hamburger">&#9776;</button>
-        </div>
+        <h1 class="title">Welcome to Stark-Airline</h1>
+        <h2 class="title">What do you want to do?</h2>
+        <a href="index.html" class="title">Sign out</a>
     </header>
-
-    <!-- Contenedor de opciones principales -->
-    <section class="main-options">
+    <nav>
         <a href="flights.html" class="options">Flights</a>
         <a href="check-in.html" class="options">Check In</a>
         <a href="my-flights.html" class="options">My Flights</a>
-    </section>
-
-    <!-- Menú hamburguesa oculto -->
-    <nav class="menu" id="menu">
-        <a href="home.html" class="options">Home</a>
-        <a href="index.html" class="options">Log Out</a>
     </nav>
-
     <main>
-        <!-- Contenido principal -->
-    </main>
 
+    </main>
     <footer>
         <p>&copy; 2024 STARK-INDUSTRIES. All rights reserved.</p>
     </footer>
-
-    <!-- Script para abrir/cerrar menú -->
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const menu = document.getElementById('menu');
-
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
