@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: sans-serif;
-    background-color: rgb(61, 61, 61);
+    background-color: skyblue;
     margin: 0;
     padding: 0.75rem;
     box-sizing: border-box;
@@ -9,17 +9,18 @@ body {
 
 /* Encabezado */
 header {
+    border: black solid 2px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     text-align: center;
     width: min(100%, 360px);
     margin: 1rem auto 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 12px;
     transition: transform 0.3s ease;
-    color: white;
+    color: rgb(0, 0, 0);
     box-sizing: border-box;
 }
 
@@ -57,7 +58,7 @@ img.logo:hover {
 main {
     width: min(100%, 360px);
     margin: 1rem auto;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     border-radius: 12px;
     border: 2px solid #000000;
@@ -92,9 +93,9 @@ label {
 /* Botón */
 button {
     padding: 0.9rem 1rem;
-    background-color: black;
+    background-color: orange;
     color: white;
-    border: none;
+    border: black solid 1.5px;
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
@@ -104,9 +105,9 @@ button {
 }
 
 button:hover {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     color: black;
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 
 /* Navegación secundaria */

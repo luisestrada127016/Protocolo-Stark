@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: sans-serif;
-    background-color: rgb(122, 122, 122);
+    background-color: skyblue;
     margin: 0;
     padding: 0.75rem;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ header {
     text-align: center;
     width: min(100%, 360px);
     margin: 1rem auto 0;
-    background-color: #ffffff;
+    background-color: rgb(255, 136, 0);
     padding: 1rem;
     border: 2px solid #000000;
     border-radius: 12px;
@@ -86,6 +86,11 @@ main {
     }
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
 /* Formulario */
 form {
     display: flex;
@@ -118,9 +123,9 @@ label {
 /* Botón */
 button {
     padding: 0.9rem 1rem;
-    background-color: black;
+    background-color: orange;
     color: white;
-    border: none;
+    border: black solid 1.5px;
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
