@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia</title>
+    <link rel="stylesheet" href="css/Colombia.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <h1>Colombia</h1>
+    </header>
+
+    <!-- Menú hamburguesa -->
+    <nav id="menu">
+        <a href="home.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="index.html">Log Out</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Cartagena de Indias</h2>
+            <p>Una ciudad colonial llena de historia, murallas y playas hermosas en el Caribe colombiano.</p>
+        </section>
+        <img src="img/fotos-turisticas/Colombia.jpg" alt="Imagen de Colombia Sombrillas" class="colombia-image">
+        <section>
+            <h2>Medellín</h2>
+            <p>Conocida como la ciudad de la eterna primavera, famosa por su innovación y el Festival de las Flores.</p>
+        </section>
+        <img src="img/fotos-turisticas/download (1).jpg" alt="Imagen de Colombia" class="colombia-image">
+        <section>
+            <h2>Bogotá</h2>
+            <p>La capital del país, con museos como el Museo del Oro y la histórica Candelaria.</p>
+        </section>
+        <img src="img/fotos-turisticas/Valle del cócora _ Colombia 🇨🇴.jpg" alt="Imagen de Colombia" class="colombia-image">
+    </main>
+
+    <footer>
+        <p>&copy; Turismo Colombia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -20,7 +20,6 @@ header {
     padding: 1rem;
     border-radius: 12px;
     transition: transform 0.3s ease;
-    color: #000000;
     box-sizing: border-box;
 }
 
