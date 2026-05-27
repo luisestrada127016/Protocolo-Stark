@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Airline Check-In</title>
+    <link rel="stylesheet" href="css/check-in.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Online Check-In</h1>
+        <p>Confirm your flight and get your boarding pass</p>
+    </header>
+
+    <main>
+        <section class="card">
+        <h2>Reservation Details</h2>
+        <form>
+            <label for="code">Booking Code:</label>
+            <input type="text" id="code" name="code" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <button type="submit">Start Check-In</button>
+        </form>
+        </section>
+
+        <section class="card">
+            <h2>Check-In Steps</h2>
+            <ul>
+                <li>Itinerary verification</li>
+                <li>Acceptance of flight conditions</li>
+                <li>Passenger selection</li>
+                <li>Contact information</li>
+                <li>Seat selection</li>
+                <li>Electronic boarding pass generation</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Example Airline - Iron Man Inspired</p>
+    </footer>
 </body>
 </html>
+
