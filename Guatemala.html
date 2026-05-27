@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guatemala</title>
+    <link rel="stylesheet" href="css/Guatemala.css">
+</head>
+<body>
+    <header>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <h1>Guatemala</h1>
+    </header>
+
+    <!-- Menú hamburguesa -->
+    <nav id="menu">
+        <a href="home.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="index.html">Log Out</a>
+    </nav>
+
+    <main class="vertical">
+        <section>
+            <h2>Antigua Guatemala</h2>
+            <p>Ciudad colonial declarada Patrimonio de la Humanidad, famosa por su arquitectura barroca y procesiones religiosas.</p>
+            <img src="img/fotos-turisticas/Antigua.jpg" alt="Imagen de Antigua Guatemala" class="guatemala-image">
+        </section>
+
+        <section>
+            <h2>Petén</h2>
+            <p>Región selvática que alberga las majestuosas ruinas mayas de Tikal, uno de los sitios arqueológicos más importantes del mundo.</p>
+            <img src="img/fotos-turisticas/download.jpg" alt="Imagen de Petén" class="guatemala-image">
+        </section>
+
+        <section>
+            <h2>Lago de Atitlán</h2>
+            <p>Considerado uno de los lagos más bellos del planeta, rodeado de volcanes y pintorescos pueblos indígenas.</p>
+            <img src="img/fotos-turisticas/#guatemala_.jpg" alt="Imagen del Lago de Atitlán" class="guatemala-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Turismo Guatemala. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
