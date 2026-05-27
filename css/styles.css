@@ -141,6 +141,35 @@ footer {
     margin: 5rem auto 1rem;
 }
 
+.img-loading {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: skyblue;
+    overflow: hidden;
+}
+
+.jet {
+    width: 150px;
+    position: relative;
+    animation: vuelo 5s ease-in-out forwards;
+}
+
+@keyframes vuelo {
+    0% {
+        transform: translateX(-200px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(0) rotate(90deg); /* se pone vertical */
+    }
+    100% {
+        transform: translateY(200px) rotate(90deg); /* aterriza */
+    }
+}
+
+
 /* Responsive */
 @media (max-width: 480px) {
     header, main {
