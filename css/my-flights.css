@@ -18,6 +18,18 @@ header h1 {
     font-size: 1.8rem;
 }
 
+/* Menú oculto */
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #000000; /* Rojo */
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
 /* Flight Ticket Style */
 .ticket {
     width: 90%;
@@ -58,6 +70,15 @@ header h1 {
     font-weight: bold;
 }
 
+footer {
+    background-color: #AA0505;
+    color: #FFCC00;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
+}
+
 @media (max-width: 600px) {
     header h1 {
     font-size: 1.4rem;
@@ -72,3 +93,4 @@ header h1 {
     padding: 10px;
     }
 }
+
