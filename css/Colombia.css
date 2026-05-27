@@ -11,70 +11,56 @@ header {
     color: #000;
 }
 
-/* Botón hamburguesa */
-.hamburger {
-    font-size: 30px;
-    background: none;
-    border: none;
-        cursor: pointer;
-        color: #000;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        }
+/* Menú oculto */
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #DC143C; /* Rojo */
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
 
-        /* Menú oculto */
-        nav {
-            display: none;
-            flex-direction: column;
-            background-color: #DC143C; /* Rojo */
-            position: absolute;
-            top: 60px;
-            left: 15px;
-            padding: 10px;
-            border-radius: 8px;
-        }
+nav.active {
+    display: flex;
+}
 
-        nav.active {
-            display: flex;
-        }
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #FFD700;
+}
 
-        nav a {
-            color: #FFD700;
-            text-decoration: none;
-            padding: 10px;
-            border-bottom: 1px solid #FFD700;
-        }
+nav a:hover {
+    background-color: #00008B;
+    color: white;
+}
 
-        nav a:hover {
-            background-color: #00008B;
-            color: white;
-        }
+main {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
 
-        main {
-            padding: 20px;
-            background-color: blue;
-            color: white;
-        }
+section {
+    margin-bottom: 20px;
+    border-left: 5px solid #00008B;
+    padding-left: 10px;
+}
 
-        section {
-            margin-bottom: 20px;
-            border-left: 5px solid #00008B;
-            padding-left: 10px;
-        }
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
-        footer {
-            background-color: red;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-img.colombia-image {
-    width: 100%;
-    max-width: 300px;
-    height: 150;
-    margin: 20px auto;
-    display: block;
+img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    margin-top: 1rem;
 }
