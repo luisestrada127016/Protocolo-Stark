@@ -1,3 +1,4 @@
+/* General */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
@@ -35,7 +36,8 @@ main {
     background-color: #fff;
     border-radius: 10px;
     padding: 45px;
-    width: 350px;
+    width: 350px; /* ancho fijo en desktop */
+    max-width: 100%; /* evita que se desborde en pantallas pequeñas */
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     transition: transform 0.2s ease-in-out;
 }
@@ -54,7 +56,6 @@ input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-
     border: 1px solid #AA0505;
     border-radius: 5px;
 }
@@ -98,13 +99,15 @@ footer {
     box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
 } 
 
+/* Responsive */
 @media (max-width: 768px) {
     main {
         flex-direction: column;
         align-items: center;
     }
+
     .card {
-      width: 90%; /* ocupa casi toda la pantalla en móvil */
+        width: 90%; /* ocupa casi toda la pantalla en móvil */
     }
 
     h1 {
@@ -114,18 +117,8 @@ footer {
     header p {
         font-size: 1em;
     }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8em;
-    }
-
-    .card {
-        padding: 15px;
-    }
 
     button {
-      width: 100%; /* botón ocupa todo el ancho en móvil */
+        width: 100%; /* botón ocupa todo el ancho en móvil */
     }
 }
