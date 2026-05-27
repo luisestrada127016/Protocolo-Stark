@@ -12,7 +12,7 @@ header {
 }
 
 /* Menú oculto */
-nav {
+.card {
     display: none;
     flex-direction: column;
     background-color: #DC143C; /* Rojo */
@@ -23,18 +23,18 @@ nav {
     border-radius: 8px;
 }
 
-nav.active {
+.card.active {
     display: flex;
 }
 
-nav a {
+.card a {
     color: #FFD700;
     text-decoration: none;
     padding: 10px;
     border-bottom: 1px solid #FFD700;
 }
 
-nav a:hover {
+.card a:hover {
     background-color: #00008B;
     color: white;
 }
