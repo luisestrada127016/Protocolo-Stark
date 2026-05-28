@@ -150,7 +150,7 @@ footer {
     justify-content: center;
     align-items: last baseline;
     z-index: 9999;
-    animation: fadeOut 6s forwards; /* desaparece después de la animación */
+    animation: fadeOut 4s forwards; /* desaparece después de la animación */
 }
 
 .jet {
@@ -161,7 +161,7 @@ footer {
 /* Animación del jet */
 @keyframes vuelo {
     0% {
-    transform: translateX(-500%) rotate(90deg);
+    transform: translateX(-500px) rotate(90deg);
     }
     50% {
     transform: translateX(0) rotate(0deg); /* se pone vertical */
@@ -188,8 +188,6 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
-
 
 /* Responsive */
 @media (max-width: 480px) {

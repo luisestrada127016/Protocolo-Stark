@@ -101,6 +101,49 @@ footer {
     box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
 } 
 
+/* Pantalla de carga */
+.img-loading {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    z-index: 9999;
+    animation: fadeOut 4s forwards; /* desaparece después de la animación */
+}
+
+.jet {
+    width: 150px;
+    animation: vuelo 3s ease-in-out forwards;
+}
+
+/* Animación del jet */
+@keyframes vuelo {
+    0% {
+    transform: translateX(-500px) rotate(90deg);
+    }
+    50% {
+    transform: translateX(0) rotate(0deg); /* se pone vertical */
+    }
+    100% {
+    transform: translateY(-385px) rotate(0deg); /* aterriza */
+    }
+}
+
+/* Desvanecer pantalla de carga */
+@keyframes fadeOut {
+    0% { opacity: 1; visibility: visible; }
+    90% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* Contenido principal oculto al inicio */
+.main-content {
+    opacity: 0;
+    animation: showContent 6s forwards; /* aparece después de la carga */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 main {
